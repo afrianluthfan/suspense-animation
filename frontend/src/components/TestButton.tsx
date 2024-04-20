@@ -15,7 +15,7 @@ const TestButton: FC = () => {
       <button type="button" onClick={goHandler}>
         trigger animation
       </button>
-      {go ? <TransitionLayerExit /> : null}
+      {go ? <TransitionLayerExit bgColor={0} reset={() => {}} /> : null}
     </>
   );
 };
