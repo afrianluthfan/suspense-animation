@@ -4,7 +4,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useDimensions } from "@/hooks/use-dimension";
-import { motion, useCycle } from "framer-motion";
+import {motion, useCycle} from "framer-motion";
 import Toggle from "./Toggle";
 import { NavItem } from "./NavItem";
 import TransitionLayer from "../TransitionLayer.tsx/TransitionLayer";

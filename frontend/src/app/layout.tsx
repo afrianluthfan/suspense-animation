@@ -2,7 +2,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ApolloWrapper } from "@/lib/apollo-provider";
+
 import Navbar from "@/components/Navbar.tsx/Navbar";
 import { Suspense } from "react";
 import TransitionSuspense from "@/components/TransitionLayer.tsx/TransitionSuspense";
@@ -19,7 +19,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
     <body className={`overflow-x-hidden ${inter.className}`}>
       <Suspense fallback={<TransitionSuspense />}>
         <Navbar />
-        <ApolloWrapper>{children}</ApolloWrapper>
+        {children}
       </Suspense>
     </body>
   </html>
